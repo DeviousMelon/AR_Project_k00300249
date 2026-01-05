@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AR Xmas — Download</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="wrap">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">🎄</div>
+      <div>
+        <h1>AR Xmas</h1>
+        <p class="sub">
+          Marker-based AR Christmas experience (Unity + AR Foundation + ARCore).
+        </p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a class="btn primary" href="download/AR_K00300249.apk" download>
+        Download APK
+      </a>
+      <p class="fineprint">
+        Android only. You may need to allow “Install unknown apps”.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h2>How to install</h2>
+      <ol>
+        <li>Tap <strong>Download APK</strong> above.</li>
+        <li>Open the downloaded file on your phone.</li>
+        <li>If prompted, allow installs from your browser/files app.</li>
+        <li>Install and open <strong>AR Xmas</strong>.</li>
+      </ol>
+      <p class="hint">
+        If install is blocked: Settings → Security/Privacy → “Install unknown apps” → allow for your browser/files app.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>How to use</h2>
+      <ol>
+        <li>Launch the app.</li>
+        <li>Point your camera at the printed marker.</li>
+        <li>When the tree appears, use the on-screen buttons:</li>
+      </ol>
+      <ul>
+        <li><strong>Lights</strong> — toggles the lights.</li>
+        <li><strong>Snow</strong> — toggles snowfall.</li>
+      </ul>
+      <p class="hint">
+        If tracking is lost, re-align the camera with the marker and ensure good lighting.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Marker</h2>
+      <p>
+        Print the marker at <strong>100% scale</strong> (no “fit to page” scaling).
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="assets/marker_A4.pdf" target="_blank" rel="noopener">Open A4 Marker PDF</a>
+        <a class="btn" href="assets/marker_A6.pdf" target="_blank" rel="noopener">Open A6 Marker PDF</a>
+      </div>
+
+      <div class="media">
+        <img src="assets/marker_preview.png" alt="Marker preview (optional)" onerror="this.style.display='none'">
+      </div>
+      <p class="fineprint">
+        If you haven’t added marker PDFs yet, the buttons will 404 — add them to <code>/docs/assets</code>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Demo & repository</h2>
+      <p>
+        This page is part of the submission package. Include a demo video and project repo link below.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="https://github.com/DeviousMelon/AR-Project" id="repoLink">GitHub Repository</a>
+        <a class="btn" href="assets/demo.mp4" target="_blank" rel="noopener">Demo Video</a>
+      </div>
+
+      <p class="fineprint">
+        Tip: Put your demo video at <code>/docs/assets/demo.mp4</code> (or link an unlisted upload).
+      </p>
+    </section>
+
+    <section class="card wide">
+      <h2>Troubleshooting</h2>
+      <details>
+        <summary>App installs but won’t open / black screen</summary>
+        <ul>
+          <li>Make sure your phone supports ARCore and “Google Play Services for AR” is installed.</li>
+          <li>Try restarting the phone after install.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Marker doesn’t track</summary>
+        <ul>
+          <li>Use good lighting (avoid glare).</li>
+          <li>Hold steady and fill more of the camera view with the marker.</li>
+          <li>Print at 100% scale and keep the marker flat.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Buttons do nothing</summary>
+        <ul>
+          <li>Make sure the marker is actively tracked (object visible/stable).</li>
+          <li>If tracking is lost, re-scan and try again.</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
